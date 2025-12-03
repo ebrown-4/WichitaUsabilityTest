@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Wichita.gov Usability Testing Project</title>
+  <style>
+    body {
+      font-family: "Times New Roman", Times, serif;
+      margin: 40px;
+      line-height: 1.6;
+      background-color: #222222; /* dark background */
+      color: #f5f5f5; /* light text */
+    }
+    h1 {
+      color: #d4af37;
+      text-shadow: 2px 2px #000000; /* gold with black outline */
+      text-align: center;
+    }
+    h2 {
+      color: #d4af37;
+      text-shadow: 1px 1px #000000;
+      border-bottom: 2px solid #d4af37;
+      padding-bottom: 5px;
+      margin-top: 40px;
+    }
+    h3 {
+      color: #d4af37;
+      text-shadow: 1px 1px #000000;
+      margin-top: 20px;
+    }
+    nav {
+      background: #000000;
+      padding: 10px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    nav a {
+      color: #d4af37;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+      color: #ffffff;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-bottom: 20px;
+      background-color: #333333;
+    }
+    th {
+      background-color: #000000;
+      color: #d4af37;
+      padding: 8px;
+    }
+    td {
+      border: 1px solid #000000;
+      padding: 8px;
+      color: #f5f5f5;
+    }
+    iframe {
+      margin: 20px 0;
+      border: 3px solid #d4af37;
+    }
+    header {
+      background: #000000;
+      color: #d4af37;
+      padding: 20px;
+      text-align: center;
+    }
+    footer {
+      background: #000000;
+      color: #d4af37;
+      text-align: center;
+      padding: 10px;
+      margin-top: 40px;
+    }
+    ul, ol {
+      margin-left: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Wichita.gov Usability Testing Project</h1>
+    <p>INF 650 – Introduction to Human-Computer Interaction</p>
+  </header>
+
+  <nav>
+    <a href="#step1">Step 1</a>
+    <a href="#step2">Step 2</a>
+    <a href="#step3">Step 3</a>
+    <a href="#step4">Step 4</a>
+    <a href="#step5">Step 5</a>
+    <a href="#step6">Step 6</a>
+    <a href="#step7">Step 7</a>
+    <a href="#step8">Step 8</a>
+    <a href="#recommendations">Recommendations</a>
+    <a href="#reflection">Reflection</a>
+  </nav>
+
+ <h2 id="step1">Step 1: Selecting a Website</h2>
+<p>
+  For this usability testing project, I selected the official City of Wichita website, <strong>Wichita.gov</strong>. 
+  This site serves as the primary digital interface between the city government and its residents, businesses, and visitors. 
+  It provides access to essential services such as paying utility bills, reporting community issues, applying for permits, 
+  and finding information about city programs and events.
+</p>
+<p>
+  I chose Wichita.gov because it represents a real-world example of a civic website where usability directly impacts daily life. 
+  Citizens rely on it to complete important tasks quickly and efficiently, yet government websites often face challenges with 
+  navigation, clarity, and accessibility. By testing this site, I can evaluate how well it supports diverse users from residents 
+  seeking local services to business owners managing permits—and identify opportunities for improvement.
+</p>
+<p>
+  This website is an ideal candidate for usability testing because it combines complex navigation, multiple service pathways, 
+  and a broad audience. Documenting the testing process here not only highlights usability issues but also demonstrates how 
+  structured evaluation can lead to useful recommendations for improving the user experience.
+</p>
+
+<h2 id="step2">Step 2: Heuristic Evaluation</h2>
+<h3>Summary of Issues Identified</h3>
+<p>
+  The heuristic evaluation of Wichita.gov revealed several usability challenges that could hinder users from efficiently 
+  completing tasks. While the site provides essential services and information, its navigation and feedback mechanisms often 
+  fall short of supporting a smooth user experience. The “How Do I…” menu, for example, uses vague language that does not align 
+  with user expectations, forcing visitors to guess where services might be located. Error messages are generic and provide 
+  little guidance in recovery, leaving users uncertain about how to correct mistakes.
+</p>
+<p>
+  In addition, inconsistencies in design such as varying button styles and unexpected behaviors reduce predictability and trust. 
+  Forms are particularly problematic, as they allow incomplete submissions and lack clear progress indicators, which can frustrate 
+  users attempting to pay bills or apply for permits. The overall layout is text-heavy, with limited visual hierarchy, making it 
+  difficult for users to scan and locate information quickly. Finally, help and documentation are scattered across multiple pages, 
+  requiring extra effort to find instructions or support.
+</p>
+<p>
+  Together, these issues highlight the need for clearer navigation labels, stronger error prevention and recovery mechanisms, 
+  consistent design standards, and more accessible help resources. Addressing these areas would significantly improve the usability 
+  of Wichita.gov and ensure that residents and businesses can interact with the city’s services more effectively.
+</p>
+
+<h3>Heuristic Evaluation Table</h3>
+<table>
+  <tr>
+    <th>Heuristic</th>
+    <th>Strengths</th>
+    <th>Issues Identified</th>
+    <th>Severity</th>
+  </tr>
+  <tr>
+    <td>1. Visibility of System Status</td>
+    <td>Homepage shows alerts and announcements.</td>
+    <td>Forms provide minimal feedback; users are unsure if submissions are processing.</td>
+    <td>Major</td>
+  </tr>
+  <tr>
+    <td>2. Match Between System and Real World</td>
+    <td>Uses familiar civic terms like “City Council” and “Departments.”</td>
+    <td>Menu labels like “How Do I…” are vague and don’t match user expectations.</td>
+    <td>Moderate</td>
+  </tr>
+  <tr>
+    <td>3. User Control and Freedom</td>
+    <td>Back navigation works consistently.</td>
+    <td>Limited undo/cancel options in forms; users must restart if errors occur.</td>
+    <td>Major</td>
+  </tr>
+  <tr>
+    <td>4. Consistency and Standards</td>
+    <td>Consistent branding and city logo across pages.</td>
+    <td>Button styles and link behaviors vary; some links open new tabs unexpectedly.</td>
+    <td>Moderate</td>
+  </tr>
+  <tr>
+    <td>5. Error Prevention</td>
+    <td>Required fields marked with asterisks.</td>
+    <td>Forms allow incomplete submissions; errors appear after submission instead of preventing mistakes.</td>
+    <td>Major</td>
+  </tr>
+  <tr>
+    <td>6. Recognition Rather Than Recall</td>
+    <td>Navigation menus visible on every page.</td>
+    <td>Services buried under multiple menus; users must remember where to find them.</td>
+    <td>Moderate</td>
+  </tr>
+  <tr>
+    <td>7. Flexibility and Efficiency of Use</td>
+    <td>Search bars are available across site.</td>
+    <td>No shortcuts or personalization; frequent users cannot save preferences.</td>
+    <td>Minor</td>
+  </tr>
+  <tr>
+    <td>8. Aesthetic and Minimalist Design</td>
+    <td>Clean homepage with city branding.</td>
+    <td>Text-heavy pages with weak visual hierarchy; scanning is difficult.</td>
+    <td>Moderate</td>
+  </tr>
+  <tr>
+    <td>9. Help Users Recognize, Diagnose, and Recover from Errors</td>
+    <td>Error messages appear when forms fail.</td>
+    <td>Messages are generic (“Error occurred”) and don’t guide users to fix problems.</td>
+    <td>Major</td>
+  </tr>
+  <tr>
+    <td>10. Help and Documentation</td>
+    <td>FAQ and contact info available.</td>
+    <td>Help content scattered; instructions require digging through multiple pages.</td>
+    <td>Moderate</td>
+  </tr>
+</table>
+  
+
+  <h2 id="step3">Step 3: Personas</h2>
+  <h3>Persona 1: Wichita Resident</h3>
+  <table>
+    <tr><th>Attribute</th><th>Details</th></tr>
+    <tr><td>Name</td><td>Jordan Chism</td></tr>
+    <tr><td>Age</td><td>25</td></tr>
+    <tr><td>Occupation</td><td>Student at Wichita State University</td></tr>
+    <tr><td>Goals</td><td>Pay bills, find events, report issues</td></tr>
+    <tr><td>Frustrations</td><td>Confusing menus, unclear errors</td></tr>
+    <tr><td>Technical Comfort</td><td>Moderate</td></tr>
+  </table>
+
+  <h3>Persona 2: Wichita Business Employee</h3>
+  <table>
+    <tr><th>Attribute</th><th>Details</th></tr>
+    <tr><td>Name</td><td>Zachary Brown</td></tr>
+    <tr><td>Age</td><td>35</td></tr>
+    <tr><td>Occupation</td><td>Project Manager & Estimator</td></tr>
+    <tr><td>Goals</td><td>Apply for permits, access regulations</td></tr>
+    <tr><td>Frustrations</td><td>Time-consuming, poor mobile optimization</td></tr>
+    <tr><td>Technical Comfort</td><td>High</td></tr>
+  </table>
+
+  <h2 id="step4">Step 4: Scenarios</h2>
+  <h3>Scenario 1: Paying a Utility Bill (Jordan)</h3>
+  <p>Jordan is a 25-year-old graduate student living in Wichita. Between being a full-time student and working part time, his schedule is packed, so he relies on online services to save time. One evening, Jordan receives a reminder that his water bill is due. He decides to pay for it online through Wichita.gov rather than mailing a check. Jordan opens the website on his laptop, expecting a clear “Pay My Bill” option on the homepage. Instead, he finds himself clicking through several menus, including “How Do I…” and “Departments,” before locating the utility payment portal. Once there, he enters his account information, but when he submits the form, an error message appears without explaining what went wrong. Frustrated, Jordan re-enters his details and eventually completes the payment.</p>
+  <ul>
+    <li>Locate “Pay My Bill”</li>
+    <li>Navigate portal</li>
+    <li>Enter account info</li>
+    <li>Confirm payment</li>
+  </ul>
+
+  <h3>Scenario 2: Applying for a Work Permit (Zach)</h3>
+  <p>Zach works for a family-owned construction business that stripes roads within Wichita city limits. His supervisor asks him to apply for a permit online to begin a new project. Zach prefers to use the website rather than going to the city offices. He opens Wichita.gov on his desktop computer and looks for “Permits & Licenses.” After clicking through several subpages, he finds the business permit section. The form is long and requires detailed information about the company and project. Zach fills it out carefully, but when he submits it, the confirmation page is vague, leaving him unsure whether the application was processed. He prints the page just in case.</p>
+  <ul>
+    <li>Locate “Permits & Licenses”</li>
+    <li>Identify correct form</li>
+    <li>Complete application</li>
+    <li>Submit and confirm</li>
+  </ul>
+<h2 id="step5">Step 5: Usability Test Plan</h2>
+<ol>
+  <li>
+    <strong>Goals for the usability test will evaluate Wichita.gov using the 5Es framework:</strong>
+    <ul>
+      <li><strong>Effective:</strong> Can users successfully complete common tasks (paying bills, requesting permits)?</li>
+      <li><strong>Efficient:</strong> How quickly can users accomplish tasks without hassle?</li>
+      <li><strong>Engaging:</strong> Do users feel confident and satisfied while interacting with the site?</li>
+      <li><strong>Error-Tolerant:</strong> How well does the site prevent mistakes, communicate errors, and allow recovery?</li>
+      <li><strong>Easy to Learn:</strong> Can new users navigate the site without prior training or instructions?</li>
+    </ul>
+  </li>
+
+  <li>
+    <strong>Scope of the Project</strong>
+    <ul>
+      <li>Number of Users: 2 participants.</li>
+      <li>Session Length: Each session will last approximately 30 minutes.</li>
+      <li>Test Environment: Desktop or laptop computer, using Chrome or Edge browser with zoom.</li>
+      <li>Recording: Screen capture and audio recording to document user interactions and “think aloud” commentary.</li>
+    </ul>
+  </li>
+
+  <li>
+    <strong>Tasks/Scenarios</strong>
+    <p>Tasks are reckonable actions supported with the scenarios developed earlier. They avoid giving directions (“Click here”) and instead focus on observable outcomes.</p>
+    <ul>
+      <li>
+        <strong>Scenario 1: Paying a Utility Bill (Wichita Resident – Jordan)</strong>
+        <ul>
+          <li>Task: Locate and complete the utility bill payment process.</li>
+          <li>Success Criteria: Payment submitted and confirmation received.</li>
+        </ul>
+      </li>
+      <li>
+        <strong>Scenario 2: Applying for a Work Permit (Wichita Family-Owned Business Employee – Zach)</strong>
+        <ul>
+          <li>Task: Locate and complete the business permit application form.</li>
+          <li>Success Criteria: Form submitted successfully or download completed.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+
+  <li>
+    <strong>Pre-Test Questionnaire (Relevant Information Only)</strong>
+    <p>The pre-test questionnaire will gather background information that helps contextualize participant performance.</p>
+    <ul>
+      <li>Have you used Wichita.gov before?</li>
+      <li>How often do you complete tasks online (bill payments, forms, reporting issues)?</li>
+      <li>What device do you typically use for online services (desktop, laptop, mobile)?</li>
+      <li>How confident do you feel using government websites to complete tasks?</li>
+      <li>What frustrations have you experienced with online forms or portals in the past?</li>
+    </ul>
+  </li>
+</ol>
+  <h2 id="step6">Step 6: Moderator Script</h2>
+
+<h3>Introduction</h3>
+<p>
+  “Thank you for participating in this usability test. Today, we’ll be evaluating how you interact with the City of Wichita website, Wichita.gov. 
+  The purpose of this meeting is to understand how easy or difficult it is to complete common tasks on the site. 
+  We are testing the website, not you. Please think aloud as you work through each task, share what you’re looking for, what you expect, 
+  and any frustrations you encounter.”
+</p>
+
+<h3>Pre-Test Questions</h3>
+<ol>
+  <li>Have you used Wichita.gov before?</li>
+  <li>How often do you complete tasks online (such as bill payments, forms, or reporting issues)?</li>
+  <li>What device do you typically use for online services?</li>
+  <li>How confident do you feel using government websites to complete tasks?</li>
+</ol>
+
+<h3>Instructions</h3>
+<p>
+  “I’ll give you a series of scenarios to complete. Please try to accomplish each task as naturally as possible. 
+  If you get stuck, let me know what you’re thinking, but I won’t give you direct help unless you’re completely unable to continue. 
+  There are no right or wrong answers we’re only interested in your experience.”
+</p>
+
+<h3>Scenarios</h3>
+<ul>
+  <li>
+    <strong>Scenario 1: Paying a Utility Bill (Wichita Resident – Jordan)</strong><br>
+    “Imagine you are Jordan, a 25-year-old graduate student living in Wichita. Between school and working part time, your schedule is packed, 
+    so you rely on online services to save time. One evening, you receive a reminder that your water bill is due. 
+    You decide to pay it online through Wichita.gov rather than mailing a check. 
+    Please show me how you would go about paying your monthly water bill online.”
+  </li>
+  <li>
+    <strong>Scenario 2: Applying for a Work Permit (Wichita Family-owned Business Employee – Zach)</strong><br>
+    “Now imagine you are Zach, an employee at a family-owned business that stripes roads within Wichita city limits. 
+    Your supervisor has asked you to apply for a permit online to begin a new project. 
+    You prefer to handle this online rather than going into city offices. 
+    Please show me how you would locate and complete the work permit application on Wichita.gov.”
+  </li>
+</ul>
+
+<h3>Closing Questions</h3>
+<ol>
+  <li>“How would you describe your overall experience using Wichita.gov?”</li>
+  <li>“What was the most frustrating part of the process?”</li>
+  <li>“What worked well for you?”</li>
+  <li>“If you could change one thing about the site, what would it be?”</li>
+</ol>
+
+<h3>Conclusion</h3>
+<p>
+  “Thank you for your time and feedback. Your input will help us recognize usability issues and improve the website experience.”
+</p>
+  <h2 id="step7">User Description Summary</h2>
+<p>
+  Before beginning tasks, each participant completed a short pre-test questionnaire. 
+  The responses provided context about their background, comfort level with online services, and expectations for Wichita.gov. 
+  This information helped align participants with the persona outlined earlier.
+</p>
+<p>
+  The questionnaires also revealed differences in experience levels, device preferences, and expectations. 
+  Some participants were confident with online bill payment but less familiar with gathering information on city permits. 
+  Device usage varied between laptops and cell phones, which influenced how participants navigated the site. 
+  Collecting this background data was essential for understanding test results. 
+  It allowed us to understand not only what participants did during tasks, but also why they approached the site in certain ways. 
+  Their prior preferences, confidence levels, and expectations influenced their interactions and highlighted usability issues 
+  that might not be visible without this context.
+</p>
+
+<h3>User #1 (Wichita Resident Persona – Jordan, utility bill scenario)</h3>
+<ul>
+  <li>Age: 25, graduate student living in Wichita.</li>
+  <li>Device preference: Laptop at home.</li>
+  <li>Online habits: Pays bills online regularly, moderate confidence with government websites.</li>
+  <li>Expectation: Clear “Pay My Bill” option on homepage.</li>
+</ul>
+
+<h3>User #2 (Wichita Family-Owned Business Employee – Zach, work permit scenario)</h3>
+<ul>
+  <li>Age: 35, employee at a family-owned road construction business.</li>
+  <li>Device preference: Desktop computer at work or cell phone.</li>
+  <li>Expectation: Direct access to permit applications and clear confirmation of submission.</li>
+</ul>
+
+<h3>User 1 Usability Test</h3>
+<p>
+  <a href="https://youtu.be/dsvH4t81K14?si=7u_oVte6Fw5L3KbU" target="_blank">
+    Watch User 1 Test Video
+  </a>
+</p>
+
+<h3>User 2 Usability Test</h3>
+<p>
+  (Video link or embed here)
+</p>
+ <h2 id="step8">Step 8: Analyze the Findings</h2>
+
+<h3>Participant 1 (Wichita Resident Persona – Jordan)</h3>
+<ul>
+  <li><strong>Scenario Tested:</strong>
+    <ul>
+      <li>Paying a Utility Bill</li>
+    </ul>
+  </li>
+  <li><strong>Summary of Findings:</strong>
+    <ul>
+      <li>Participant located the “Pay My Bill” section after navigating through multiple menus.</li>
+      <li>At 12:45 in the recording, they encountered an error message that did not specify which field was incorrect.</li>
+      <li>They expressed frustration at re-entering information but eventually completed the payment.</li>
+    </ul>
+  </li>
+  <li><strong>Key Issues:</strong>
+    <ul>
+      <li>Poor error feedback during payment submission.</li>
+      <li>Confusing navigation to reach the payment page.</li>
+    </ul>
+  </li>
+  <li><strong>Outcome:</strong> Task completed, but with significant effort.</li>
+  <li><strong>Video Confirmation:</strong> YouTube Recording</li>
+</ul>
+
+<h3>Participant 2 (Wichita Business Employee Persona – Zach)</h3>
+<ul>
+  <li><strong>Scenario Tested:</strong>
+    <ul>
+      <li>Applying for a Work Permit</li>
+    </ul>
+  </li>
+  <li><strong>Summary of Findings:</strong>
+    <ul>
+      <li>At 3:00pm, participant struggled to locate the correct permit form under “Permits & Licenses.”</li>
+      <li>The application form was lengthy and required detailed information; participant completed it but was unsure if submission went through due to vague confirmation.</li>
+      <li>Confirmation feedback was weak, leaving them uncertain whether the request was logged.</li>
+    </ul>
+  </li>
+  <li><strong>Key Issues:</strong>
+    <ul>
+      <li>Buried services require multiple clicks.</li>
+      <li>Weak confirmation messages after submission.</li>
+    </ul>
+  </li>
+  <li><strong>Outcome:</strong> Tasks completed, but confidence in success was low.</li>
+  <li><strong>Video Confirmation:</strong> YouTube Recording</li>
+</ul>
+
+<h3>Overall Observations</h3>
+<ul>
+  <li><strong>Navigation Confusion:</strong> Users often guessed where services were located due to vague menu labels.</li>
+  <li><strong>Error Handling:</strong> Forms provided minimal guidance when errors occurred, leading to frustration.</li>
+  <li><strong>Confirmation Feedback:</strong> Users were uncertain whether submissions were successful.</li>
+  <li><strong>Efficiency:</strong> Tasks were completed, but not smoothly, requiring extra time and effort.</li>
+</ul>
+
+<h3>Analysis</h3>
+<ol>
+  <li><strong>What did you see?</strong>
+    <ul>
+      <li>Participants struggled to locate the “Pay My Bill” section, often clicking through multiple menus.</li>
+      <li>Error messages during the payment process were vague and did not identify the problem field.</li>
+      <li>Confirmation feedback after payment was minimal, leaving users unsure if the transaction went through.</li>
+      <li>Business permit forms were buried under multiple subpages, requiring extra navigation.</li>
+      <li>Permit application forms were lengthy and lacked clear instruction for required fields.</li>
+      <li>Confirmation after submitting a permit was vague, causing uncertainty about whether the request was processed.</li>
+    </ul>
+  </li>
+
+  <li><strong>What does it mean?</strong>
+    <ul>
+      <li>The site’s information design does not align with user expectations, leading to inefficient navigation.</li>
+      <li>Weak error handling increases frustration and reduces trust in the system.</li>
+      <li>Poor confirmation feedback undermines user confidence in successful task completion.</li>
+      <li>Complex permit process discourages business users from relying on the online system, potentially pushing them to go into the office.</li>
+    </ul>
+  </li>
+
+  <li><strong>What should we do about it? (severity codes)</strong>
+    <ul>
+      <li>Navigation confusion for bill payment was <strong>high</strong>, frequent resident task.</li>
+      <li>Unclear error messages during payment were <strong>high</strong>, directly affecting task success.</li>
+      <li>Weak confirmation feedback for payments and permits was <strong>high</strong>, reducing trust.</li>
+      <li>Buried permit forms were <strong>medium</strong>, important business but less frequent.</li>
+      <li>Lengthy, unclear permit application fields were <strong>medium</strong>, and the task completed but was inefficient.</li>
+    </ul>
+  </li>
+</ol>
+
+  <!-- Recommendations -->
+  <h2 id="recommendations">Six Recommendations</h2>
+  <ol>
+    <li>Add an obvious “Pay My Bill” button on the homepage and place it in the top navigation bar and homepage hero section to reduce clicks.</li>
+    <li>Revise error messages to specify the exact field causing issues such as “Account number must be 10 digits”.</li>
+    <li>Provide clear confirmation feedback after payment and include transaction ID, amount paid, and date/time.</li>
+    <li>Simplify navigation to business permits and add a direct “Apply for a Permit” link under “Business Services” instead of burying it in subpages.</li>
+    <li>Simplify permit application forms and use a gradual disclosure (show only relevant fields based on permit type) and provide inline help text.</li>
+    <li>Enhance permit submission confirmation and display a summary of submitted details and send an automatic confirmation email to the applicant.</li>
+  </ol>
+
+  <h2 id="reflection">Self-Reflection</h2>
+<p>
+  Conducting these usability tests gave me firsthand experience with the challenges of moderating sessions 
+  and synthesizing results. At first, it felt awkward to stick to a script, but I quickly realized the importance 
+  of consistency. By saying the same thing to each participant, I ensured that differences in outcomes were due 
+  to the interface, not my delivery. I also noticed how much effort it takes to remain neutral and resist the urge 
+  to guide participants, and how valuable the “think aloud” method is for uncovering hidden frustrations.
+</p>
+
+<h3>Lessons Learned</h3>
+<ul>
+  <li>Preparation matters: A clear test plan and moderator script made the sessions smoother and more reliable.</li>
+  <li>Scenarios must be realistic: Narrative-style tasks helped participants; recurring issues (navigation, error handling, confirmation feedback) became obvious.</li>
+  <li>Moderation improves with practice: By the second session, I was more comfortable balancing consistency with conversational tone.</li>
+  <li>Data needs structure: Using Barnum’s framework (“What did you see? What does it mean? What should we do?”) kept my analysis focused and actionable.</li>
+</ul>
+
+<h3>Final Thoughts on Usability Testing</h3>
+<p>
+  Usability testing is both an art and a science. The art lies in moderating and creating a comfortable space, 
+  asking the right questions, and listening carefully. Science lies in the structured process of planning, recording, 
+  analyzing, and coding findings with severity. This project reinforced that usability testing is not about perfection 
+  but about repetition and improvement. Each session builds confidence, improves observation skills, and strengthens 
+  the ability to translate user struggles into useful recommendations.
+</p>
+<p>
+  Ultimately, usability testing is essential because it bridges the gap between design assumptions and real user behavior. 
+  By applying Barnum’s principles, I learned how to move from raw observations to meaningful insights that can directly 
+  improve an interface.
+</p>
+
+  <footer>
+    <p>&copy; 2024 Wichita.gov Usability Testing Project</p>
+  </footer>
